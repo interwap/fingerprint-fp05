@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">Enrolment-fp05</string>
-    <string name="print">Please place your finger on the fingerprint reader</string>
-    <string name="auth">Match OK!</string>
-</resources>
