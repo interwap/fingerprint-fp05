@@ -1,5 +1,5 @@
-# enrolment-fp05
-A nifty (Android) library for reading and capturing fingerprint on the fgtit-fp05 mobile device
+# fingerprint-fp05
+A nifty (Android) library for verification and authentication of fingerprint on the fgtit-fp05 mobile device
 Official release library for fgtit-fp05 device.
 
 Usage:
@@ -21,11 +21,11 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 ```gradle
     dependencies {
-    	        compile 'com.github.interwap:enrolment-fp05:v1.0'
+    	        compile 'com.github.interwap:fingerprint-fp05:v1.0'
     	}
  ```
 
-Get more information about versions and releases here: [`jitpack`](https://jitpack.io/#interwap/enrolment-fp05/v1.0)
+Get more information about versions and releases here: [`jitpack`](https://jitpack.io/#interwap/fingerprint-fp05/v1.0)
 
 License
 =======
