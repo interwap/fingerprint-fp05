@@ -1,1 +1,0 @@
-include ':app', ':fgtit-fp05', ':enrolment-fp05', ':fingerprint-fp05'
