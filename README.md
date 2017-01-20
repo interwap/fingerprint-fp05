@@ -27,7 +27,7 @@ Step 2. Add the dependency
 
 Get more information about versions and releases here: [`jitpack`](https://jitpack.io/#interwap/fingerprint-fp05/v1.2)
 
-Update: What's new in version 1.2?
+Update: What's new in version 1.3?
 
 - Define value for text size
 - Define value for dialog width
