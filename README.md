@@ -21,11 +21,19 @@ Add it in your root build.gradle at the end of repositories:
 Step 2. Add the dependency
 ```gradle
     dependencies {
-    	        compile 'com.github.interwap:fingerprint-fp05:v1.1'
+    	        compile 'com.github.interwap:fingerprint-fp05:v1.2'
     	}
  ```
 
-Get more information about versions and releases here: [`jitpack`](https://jitpack.io/#interwap/fingerprint-fp05/v1.1)
+Get more information about versions and releases here: [`jitpack`](https://jitpack.io/#interwap/fingerprint-fp05/v1.2)
+
+Update: What's new in version 1.2?
+
+- Define value for text size
+- Define value for dialog width
+- Define value for dialog height
+- Check isShowing status
+
 
 License
 =======

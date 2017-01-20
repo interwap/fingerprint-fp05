@@ -2,7 +2,9 @@ package com.praescient.components.fingerprint_fp05;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
+import android.app.FragmentManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -33,6 +35,7 @@ public class Fp05 extends DialogFragment{
     private static Bundle args;
     private boolean showTitle = false;
     private boolean setCancelable = false;
+    private boolean shown = false;
 
     private LinearLayout popup;
     private ImageView preview;
@@ -99,6 +102,55 @@ public class Fp05 extends DialogFragment{
         if(args.containsKey("color")){
             popup.setBackgroundColor(context.getResources().getColor(getArguments().getInt("color")));
         }
+
+        if(args.containsKey("textSize")){
+            status.setTextSize(getArguments().getFloat("textSize"));
+        }
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        //safety check
+        if (getDialog() == null){
+            return;
+        }
+
+        int width = 460;
+        int height = 710;
+
+        if(args.containsKey("width")){
+            width = getArguments().getInt("width");
+        }
+
+        if(args.containsKey("height")){
+            height = getArguments().getInt("height");
+        }
+
+        try {
+            getDialog().getWindow().setLayout(width, height);
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+
+    }
+
+    @Override
+    public void show(FragmentManager manager, String tag) {
+        if (shown) return;
+        super.show(manager, tag);
+        shown = true;
+    }
+
+    @Override
+    public void onDismiss(DialogInterface dialog) {
+        shown = false;
+        super.onDismiss(dialog);
+    }
+
+    public boolean isShowing(){
+        return shown;
     }
 
     @Override
@@ -148,6 +200,12 @@ public class Fp05 extends DialogFragment{
     public void match(String[] templates){
         args.putStringArray("templates", templates);
     }
+
+    public void setTextSize(float size) { args.putFloat("textSize", size); }
+
+    public void setWidth(int width) { args.putInt("width", width); }
+
+    public void setHeight(int height) { args.putInt("height", height); }
 
     private void FPProcess(){
 
