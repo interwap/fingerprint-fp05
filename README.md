@@ -29,7 +29,7 @@ Get more information about versions and releases here: [`jitpack`](https://jitpa
 
 
 Update: Version 1.6 (Stable)
-- Edited Fingerprint Matching algorithm
+- Modified Fingerprint Matching algorithm
 
 
 Update: Version 1.5 (Deprecated)
