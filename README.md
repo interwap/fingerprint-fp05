@@ -31,11 +31,15 @@ Get more information about versions and releases here: [`jitpack`](https://jitpa
 Update: Version 1.5 (Stable)
 - Edited Fingerprint Matching algorithm
 
+
+
 Update: Version 1.4 (Stable)
 - Set value for text size
 - Set value for dialog width
 - Set value for dialog height
 - Check isShowing Status
+
+
 
 Update: Version 1.3 (Deprecated)
 - Fixed TextSize Bug
